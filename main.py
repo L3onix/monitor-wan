@@ -7,9 +7,11 @@ import os
 from threading import Thread
 
 # apresentação
-print('>>>>>>>>>>>>>>> MONITOR-WAN <<<<<<<<<<<<<<<')
-print('Create by: L3onix <Leonardo Facundes - leonardo.fm00@gmail.com>\n\n')
+#print('>>>>>>>>>>>>>>> MONITOR-WAN <<<<<<<<<<<<<<<')
+#print('Create by: L3onix <Leonardo Facundes - leonardo.fm00@gmail.com>\n\n')
 
+#captura de dados para teste ping
+teste_ping = dados_teste_ping()
 # 0-pacotes transmitidos 1-recebidos 2-perdidos% 3-tempo total de teste ms
 # 4-rtt min 5-rtt medio 6-rtt max 7-rtt desvio medio
 qtd_pacotes = '2000'    #quantidade exigida no trabalho
@@ -21,8 +23,6 @@ ip_test = '8.8.8.8'     #ip de teste exigido no trabalho
 server_id = '12730'     #id de teste sugerido no trabalho
 #teste_speedtest = speedtest.test_speedtest(server_id)
 
-# TODO: adaptar este método para abrir uma
-# thread para cara teste ser executado ao mesmo tempo
 # método para iniciar teste
 def start_test():
     #criando threads

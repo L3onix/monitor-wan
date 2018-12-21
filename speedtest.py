@@ -1,8 +1,16 @@
 #imports
 import subprocess
 import re
-import escrevecsv
+import escreve_csv
 import datetime
+
+class Speedtest:
+    def __init__(self):
+        self.__id_server = ''
+    
+    def preenche_dados(self):
+        
+
 
 #funcao para teste speedtest
 def test_speedtest(id_server: str) -> list:
